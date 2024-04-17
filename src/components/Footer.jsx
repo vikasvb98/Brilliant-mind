@@ -47,7 +47,7 @@ const Footer = () => {
               </div>
               <p className="text-[16px] font-medium text-[#646464]">
                 Privacy Policy | © {new Date().getFullYear()} BRILIANT MIND TECH <br />{" "}
-                Made by{" "}
+                Developed by{" "}
                 <a
                   target="_blank"
                   rel="noreferrer"
@@ -59,9 +59,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-8 relative">
               <p className="text-[22px] font-bold footer-main">Our Services</p>
-
               <span className="top-[33px] absolute w-[7rem] h-[4px] bg-yellow-800"></span>
-
               <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
               Customized Staff Augmentation
               </p>
@@ -80,9 +78,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-8 relative">
               <p className="text-[22px] font-bold footer-main">Working Hours</p>
-
               <span className="top-[33px] absolute w-[7rem] h-[4px] bg-yellow-800"></span>
-
               <p className="text-[16px]  text-gray-800 font-bold">
                 Monday - Friday:
               </p>

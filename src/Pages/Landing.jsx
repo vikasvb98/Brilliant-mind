@@ -5,7 +5,7 @@ import Rightsidebar from '../components/Rightsidebar'
 
 const Landing = () => {
   return (
-    <div className='h-screen overflow-hidden'>
+    <div className='h-screen antialiased overflow-hidden'>
     <Navbar />
     <Main />
     <Rightsidebar/>

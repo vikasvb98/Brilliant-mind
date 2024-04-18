@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <>
         <footer className="bg-white">
-        <div className="container mx-auto  py-[10rem]">
+        <div className="container mx-auto">
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             <div className="flex flex-col w-1/2 md:p-0 py-4 gap-8">
               <img
@@ -33,7 +33,7 @@ const Footer = () => {
               <div className="flex gap-7 text-[18px] text-[#646464] justify-center md:justify-start">
                 {iconsTab.map(({ icon }, index) => {
                   return (
-                    <Link to={iconsTab[index].link} key={index}>
+                    <Link to={iconsTab[index].link} key={index} target="_blank">
                     <div
                       key={index}
                       className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-yellow-800 hover:text-gray-800"

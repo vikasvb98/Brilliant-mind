@@ -2,13 +2,12 @@ import React from "react";
 import heroVideo from "../assets/hero video.mp4";
 import { IoCallSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Main = () => {
   const handleCallButtonClick = () => {
-    // Replace 'phoneNumber' with the actual phone number you want to call
     const phoneNumber = '9877817339';
     
-    // Use window.open() with tel protocol to initiate the call
     window.open(`tel:${phoneNumber}`, '_blank');
   };
   return (
@@ -43,13 +42,14 @@ const Main = () => {
               </span>
             </button>
             
+            <Link to="https://wa.me/9877817339?text=Hello How Can I Help You" target="_blank">
             <button className="flex items-center justify-center text-white bg-gray-800 hover:bg-yellow-800 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-lg px-5 py-2.5">
               WhatsApp{" "}
               <span className="inline-block ml-2">
                 <FaWhatsapp />
               </span>
             </button>
-            
+            </Link>
                       </div>
         </div>
       </div>

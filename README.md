@@ -1,8 +1,16 @@
-# React + Vite
+Brilliant Mind Tech - Candidate Outsourcing Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Brilliant Mind Tech project repository! This repository contains the source code for the Brilliant Mind Tech website, a candidate outsourcing company. The website is built using the MERN (MongoDB, Express.js, React.js, Node.js) stack and styled using Tailwind CSS.
 
-Currently, two official plugins are available:
+Below are Some SS of the website 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+![home](https://github.com/vikasvb98/Brilliant-mind/assets/49707580/692c0b33-e667-4d28-b77f-c836c5da9518)
+
+![home2](https://github.com/vikasvb98/Brilliant-mind/assets/49707580/b7fec30b-1cd9-4fff-8537-6d9b0baafe64)
+
+![home3](https://github.com/vikasvb98/Brilliant-mind/assets/49707580/5fa468f0-9246-4c64-a7b3-424f974de5b7)
+
+![about](https://github.com/vikasvb98/Brilliant-mind/assets/49707580/a862d1bc-140f-4512-b865-843aa0c90fb2)
+
+![contact Us](https://github.com/vikasvb98/Brilliant-mind/assets/49707580/30d64fa5-a12e-4c18-89d1-208cbf621274)

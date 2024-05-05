@@ -1,16 +1,22 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Main from '../components/Main'
-import Rightsidebar from '../components/Rightsidebar'
+import React from "react";
+import Navbar from "../components/Navbar";
+import Main from "../components/Main";
+import Rightsidebar from "../components/Rightsidebar";
+import Footer from "../components/Footer";
+import Whyus from "../components/Whyus";
+import { BackgroundBeams } from '../components/ui/backgroundBeams'
 
 const Landing = () => {
   return (
-    <div className='h-screen antialiased overflow-hidden'>
-    <Navbar />
-    <Main />
-    <Rightsidebar/>
-    </div>
-  )
-}
+    <>
+      {/* <BackgroundBeams className="-z-10" />  */}
+      <Navbar />
+      <Main />
+      <Rightsidebar />
+      <Whyus/>
+      <Footer />
+    </>
+  );
+};
 
-export default Landing
+export default Landing;

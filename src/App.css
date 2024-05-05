@@ -1,5 +1,161 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.btn {
+  font-size: 18px;
+  color: #616161;
+  font-family: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+}
+
+.btn:focus,
+.btn:hover {
+  color: #000000;
+}
+
+.btn:focus:after,
+.btn:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.btn:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #3dacf9;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: #3dacf9;
+  box-shadow: 0 0 25px #3dacf9;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #3dacf9, 0 0 15px #3dacf9, 0 0 25px #3dacf9,
+    0 0 50px #3dacf9;
+}
+#checkbox {
+  display: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: 0.5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: 0.8s;
+}
+
+#bar1,
+#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: 0.5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: 0.5s;
+  transform: rotate(180deg);
+}
+.shine {
+  font-size: 1em;
+  font-weight: 900;
+  color: #3dacf9;
+  background: -webkit-linear-gradient(
+    -40deg,
+    transparent 0%,
+    #3dacf9 50%,
+    transparent 100%
+  );
+  background: linear-gradient(
+    -40deg,
+    transparent 0%,
+    #3dacf9 50%,
+    transparent 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 20px;
+  animation: shine-animation 5s infinite;
+}
+
+@keyframes shine-animation {
+  0%,
+  10% {
+    background-position: -200px;
+  }
+  20% {
+    background-position: top left;
+  }
+  100% {
+    background-position: 200px;
+  }
+}
+
+.carrer{
+  background: url('./assets/career.jpg') no-repeat center center/cover;
+  opacity: 0.8;
 }

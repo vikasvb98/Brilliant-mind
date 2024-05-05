@@ -3,7 +3,7 @@ import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import footerLogo from '../assets/logo-black.svg'
+import footerLogo from '../assets/logo.svg'
 
 const Footer = () => {
     const iconsTab = [
@@ -18,7 +18,7 @@ const Footer = () => {
       ];
   return (
     <>
-        <footer className="bg-white">
+        <footer className="bg-white my-2">
         <div className="container mx-auto">
           <div className="flex justify-between flex-col md:flex-row  items-center md:items-start  md:gap-[5rem] text-left">
             <div className="flex flex-col w-1/2 md:p-0 py-4 gap-8">
@@ -36,7 +36,7 @@ const Footer = () => {
                     <Link to={iconsTab[index].link} key={index} target="_blank">
                     <div
                       key={index}
-                      className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-yellow-800 hover:text-gray-800"
+                      className="text-2xl bg-[#efefef] p-2 rounded-full hover:bg-sky-300 hover:text-sy-300"
                       style={{ transition: "all 0.3s" }}
                     >
                       {icon}
@@ -59,26 +59,26 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-8 relative">
               <p className="text-[22px] font-bold footer-main">Our Services</p>
-              <span className="top-[33px] absolute w-[7rem] h-[4px] bg-yellow-800"></span>
-              <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
+              <span className="top-[33px] absolute w-[7rem] h-[4px] bg-sky-300"></span>
+              <p className="text-[16px] hover:text-sky-300 cursor-pointer text-gray-800  font-medium hover:font-bold">
               Customized Staff Augmentation
               </p>
-              <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
+              <p className="text-[16px] hover:text-sky-300 cursor-pointer text-gray-800  font-medium hover:font-bold">
               Managed IT Services
               </p>
-              <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
+              <p className="text-[16px] hover:text-sky-300 cursor-pointer text-gray-800  font-medium hover:font-bold">
               Specialized Skill Acquisition
               </p>
-              <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
+              <p className="text-[16px] hover:text-sky-300 cursor-pointer text-gray-800  font-medium hover:font-bold">
               24/7 chat Support
               </p>
-              <p className="text-[16px] hover:text-yellow-800 cursor-pointer text-gray-800  font-medium hover:font-bold">
+              <p className="text-[16px] hover:text-sky-300 cursor-pointer text-gray-800  font-medium hover:font-bold">
               Strategic Consulting
               </p>
             </div>
             <div className="flex flex-col gap-8 relative">
               <p className="text-[22px] font-bold footer-main">Working Hours</p>
-              <span className="top-[33px] absolute w-[7rem] h-[4px] bg-yellow-800"></span>
+              <span className="top-[33px] absolute w-[7rem] h-[4px] bg-sky-300"></span>
               <p className="text-[16px]  text-gray-800 font-bold">
                 Monday - Friday:
               </p>
